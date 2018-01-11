@@ -1,0 +1,38 @@
+- visit site: https://start.spring.io/
+- select: Generate a 'Maven Project' with 'Java' and Spring Boot '<latest>'
+- Project Metadata:
+  * Group: eu.gniewko
+  * Artifact: spring5webapp
+- select:
+  * WEB: Web
+  * SQL: JPA, H2
+  * Template Engines: Thymeleaf
+  * Ops: Actuator
+- button "Generate Project", download <file>.zip
+- unpack zip to project folder
+  Example structure directories:
+  <project_dir>
+  |--src
+  |--pom.xml
+  |--README
+- open IntelliJ, File->New->Project from existing sources..., select path to project
+- select Import project from external model as Maven, Next
+- select Import Maven projects automatically, Next
+- again Next
+- select JDK 8, Next
+- and Finish
+- not add /.idea/ to Git
+- in root project create .gitignore file with content:
+######################
+# Intellij
+######################
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+- git add .
+- git commit -m "001 - create structure project"
+
