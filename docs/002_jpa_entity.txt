@@ -1,0 +1,5 @@
+- run application in console
+mvn spring-boot:run
+- open http://localhost:8080/h2-console in browser to use the database H2 client
+if you see error 404, add the following line to the file project/src/main/resources/application.properties:
+spring.h2.console.enabled=true, and again run application
