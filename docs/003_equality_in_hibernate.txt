@@ -1,0 +1,6 @@
+Hibernate does recommend if we are working with sets, which we are, to implement these values and the preferred is to use a unique business key.
+And in this case, we don't have a unique business key, in theory, like author we could say firstname, lastname, but there could be two different authors with the same name.
+So we don't have a unique key to work with. So what we can do is use the ID value.
+
+We generate equals and hashCode methods (auto-generate methods in IDE) in every entity class.
+Addition, we create toString method, which return values of fields.
